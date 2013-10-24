@@ -11,7 +11,7 @@ module GlassSdk
   end
 
   class << self
-    attr_accessor :client_id, :client_secret, :scope, :template_path
+    attr_accessor :client_id, :client_secret, :scope, :template_path, :redirect_uri
   end
 
 end

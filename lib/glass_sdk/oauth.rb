@@ -6,9 +6,9 @@ module GlassSdk
 
   # 用户认证基类
   class OAuth
-    def initialize(redirect_uri)
+    def initialize
       @base_uri = "https://accounts.google.com"
-      @redirect_uri = redirect_uri
+      @redirect_uri = GlassSdk.redirect_uri
       @access_type = 'offline'
       @approval_prompt = 'force'
 
