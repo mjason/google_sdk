@@ -11,4 +11,5 @@ GlassSdk.setup do |config|
 
   # your need html templaet path
   config.template_path = "#{Rails.root}/lib/views"
+  config.redirect_uri = "https://localhost:3000/oauth2callback" #setting your oauth callback
 end
