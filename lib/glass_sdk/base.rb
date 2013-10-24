@@ -28,8 +28,12 @@ module GlassSdk
         end
       end
 
-      def get(headers={}, &block)
+      def index(headers={}, &block)
         RestClient.get(request_url, headers, &block)
+      end
+
+      def show(id=nil, headers={}, &block)
+        RestClient.get(request_url(id), headers, &block)
       end
 
       def post(payload, headers={}, &block)
